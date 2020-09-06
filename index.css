@@ -1,0 +1,141 @@
+@keyframes activate {
+    0% {opacity: 0.7;}
+    100% {opacity: 1.0;}
+}
+
+@keyframes deactivate {
+    0% {opacity: 1.0;}
+    100% {opacity: 0.7;}
+}
+
+body {
+    background-color: #111;
+
+    color: #eee;
+}
+
+#main-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 600px;
+
+    text-align: center;
+}
+
+h2 {
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 400%;
+    letter-spacing: 8px;
+    line-height: 40%;
+}
+
+hr {
+    border-color: #eee;
+    opacity: 0.3;
+}
+
+table#main-nav {
+    width: 100%;
+    margin-top: 45px;
+    border: 3px solid #eee;
+}
+
+.nav-button {
+    min-width: 150px;
+    width: 100%;
+    height: 100px;
+
+    display: block;
+    text-align: center;
+    background-color: #eee;
+
+    opacity: 0.7;
+
+    animation-name: deactivate;
+    animation-duration: 0.4s;
+}
+
+.nav-button:hover {
+    animation-name: activate;
+    animation-duration: 0.2s;
+    opacity: 1;
+}
+
+.nav-button i {
+    display: block;
+    position: relative;
+    top: 0;
+
+    margin: 0 auto;
+    padding-top: 10px;
+
+    font-size: 50px;
+}
+
+.nav-button p {
+    display: block;
+    position: relative;
+    bottom: 0;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.nav-button#discord {
+    background-color: #449;
+    color: #bbf;
+}
+
+.nav-button#discord:active {
+    background-color: #bbf;
+    color: #449;
+}
+
+.nav-button#play {
+    background-color: wheat;
+    color: #522;
+}
+
+.nav-button#play:active {
+    background-color: #522;
+    color: wheat;
+}
+
+.nav-button#forums {
+    background-color: #49213f;
+    color: #d65170;
+}
+
+.nav-button#forums:active {
+    background-color: #d65170;
+    color: #49213f;
+}
+
+#footer {
+    line-height: 80px;
+}
+
+#footer a i {
+    font-size: 40px;
+    color: #eee;
+}
+
+#footer a:hover i {
+    color: #8ae;
+
+    animation-name: activate;
+    animation-duration: 0.2s;
+}
+
+#footer a:active i {
+    color: rgb(228, 157, 99);
+}
+
